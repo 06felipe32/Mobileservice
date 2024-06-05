@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <title>SmartWatch</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        body {
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            background-image: url('https://marketplace.canva.com/EAEqgihRn3M/1/0/900w/canva-amarillo-rosado-y-verde-acuarela-suave-sin-texto-fondo-de-pantalla-para-tel%C3%A9fono-1zOXl8GAiIs.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta de tu imagen */
+            background-size: cover; /* Para asegurarte de que la imagen cubra toda la página */
+            background-position: center;
+        }</style>
+</head>
+<body>
+    <header>
+        <h1><a href="Huawei.html" class="no-underline">SmartWatch</a></h1>
+
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Samsung</p>
+                            <span class="precio-producto-carrito">$80000</span>
+                            
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-items">
+        
+        <!-- Reloj 1 -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.alkosto.com/medias/6941487294848-002-750Wx750H?context=bWFzdGVyfGltYWdlc3wzMzEzNHxpbWFnZS93ZWJwfGFHSXlMMmd4WlM4eE5ETTFOVGt4TmprNE1ESTFOQzgyT1RReE5EZzNNamswT0RRNFh6QXdNbDgzTlRCWGVEYzFNRWd8OTFiZDQ3MWIxNGYzMTA2N2FlOTUxZWYyNDQwZjBiMGJmODFkOGI5YzNiNDcxYWRlYmRhMzQyZTQ0NjNjYjI4ZA"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Watch Fit Se</h2>
+                <p class="price">$350000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 1.64" Milimetros <code></code>
+                <strong>Material correa</strong> Silicona <code></code>
+                <strong>Talla correa</strong> L y M <code></code>
+                <strong>Almacenamiento</strong> No <code></code>
+                <strong>Batería</strong> 1850 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <!-- Reloj 2 -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.alkosto.com/medias/6941487240586-003-750Wx750H?context=bWFzdGVyfGltYWdlc3wyMzI3NHxpbWFnZS93ZWJwfGFHWmpMMmhpT0M4eE5ETXlNRFk1TkRrMU1UazJOaTgyT1RReE5EZzNNalF3TlRnMlh6QXdNMTgzTlRCWGVEYzFNRWd8YTA2ZTg3NTJmZTQxM2UzMzQzYTM5NWQ2YzhjYTU2YjBhYjdmYWE3ODFiM2JkMzg3NDRiNmRiNWVlZjE3ZDkwYQ"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Watch Kids 4 Pro</h2>
+                <p class="price">$800000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 35.5" Milimetros <code></code>
+                <strong>Material correa</strong> Silicona <code></code>
+                <strong>Talla correa</strong> M<code></code>
+                <strong>Almacenamiento</strong> 8 mb <code></code>
+                <strong>Batería</strong> 1570 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+        
+        <!-- Reloj 3 -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.alkosto.com/medias/6941487254422-003-750Wx750H?context=bWFzdGVyfGltYWdlc3wyMjQ0MHxpbWFnZS93ZWJwfGFHSmtMMmc1TkM4eE5ETXpNRGt5TlRRME9USTBOaTgyT1RReE5EZzNNalUwTkRJeVh6QXdNMTgzTlRCWGVEYzFNRWd8NjJkMDdjYTQ5MzA2ZTg1MTkwN2Y5OWY3NzkzNDg3ZGI4MWI1YWYzNzZkNDQxZTNkMTVlMDJjNWFmZWJlYjJiNg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Watch Fit 2</h2>
+                <p class="price">$500000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 44" Milimetros <code></code>
+                <strong>Material correa</strong> Silicona <code></code>
+                <strong>Talla correa</strong> M <code></code>
+                <strong>Almacenamiento</strong> 32 gb <code></code>
+                <strong>Batería</strong> 2250 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <!-- Reloj 4 -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.alkosto.com/medias/6941487288298-003-750Wx750H?context=bWFzdGVyfGltYWdlc3w0MjI4OHxpbWFnZS93ZWJwfGFERmxMMmd3TUM4eE5ETTFNVEV6T1RNME1ETXhPQzgyT1RReE5EZzNNamc0TWprNFh6QXdNMTgzTlRCWGVEYzFNRWd8ZWIyZGYzNjQyYWRlZDliN2ExODE3NjNkZmJiYTQxMzQzODEyYjgzMWUwMzQ4MmFjZGIwYzA5ODliMTNjNTY3Yw"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>WatchBuds</h2>
+                <p class="price">$2000000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 36.3" Milimetros <code></code>
+                <strong>Material correa</strong> Cuero <code></code>
+                <strong>Talla correa</strong> L <code></code>
+                <strong>Almacenamiento</strong> No <code></code>
+                <strong>Batería</strong> 2370 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <!-- Reloj 5 -->
+        <div class="item"> 
+        <figure>
+                <img
+                    src="https://www.alkosto.com/medias/6942103103643-002-750Wx750H?context=bWFzdGVyfGltYWdlc3w1ODAxMnxpbWFnZS93ZWJwfGFHUmlMMmd4TkM4eE5ETTJOelF3TlRrek1qVTNOQzgyT1RReU1UQXpNVEF6TmpRelh6QXdNbDgzTlRCWGVEYzFNRWd8YTBiZjZkOWMzMGRlMDA3MGRiNzc2MDMwNzcwM2I5N2E2ZWE3MDU3MGRlNjVkNTQxMzdhNGE1M2U3OWNlYjM3MA"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Ultimate Design</h2>
+                <p class="price">$9950000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 48,26" Milimetros <code></code>
+                <strong>Material correa</strong> Titanio y Oro<code></code>
+                <strong>Talla correa</strong> L <code></code>
+                <strong>Almacenamiento</strong> 400 mb <code></code>
+                <strong>Batería</strong> 2500 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+        <br>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Desplegable con Colores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    body {
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      background-image: url('https://marketplace.canva.com/EAEqgihRn3M/1/0/900w/canva-amarillo-rosado-y-verde-acuarela-suave-sin-texto-fondo-de-pantalla-para-tel%C3%A9fono-1zOXl8GAiIs.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://img.freepik.com/fotos-premium/fondo-rosa-azul-fondo-rojo_889868-21.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta de tu imagen */
+    background-size: cover; /* Para asegurarte de que la imagen cubra todo el encabezado */
+    background-position: center; /* Para centrar la imagen */
+    border-top: 5px solid #5d96cb;
+    padding: 10px;
+}
+
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 90px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo img:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-right: 20px;
+    }
+
+    .navbar ul li a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .submenu-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .submenu:hover .submenu-content {
+      display: block;
+    }
+
+    .accordion-button {
+      background-color: #5d96cb;
+      color: white;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #4c7aa0;
+      color: white;
+    }
+
+    section.contact {
+      margin-top: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="menu">
+      <div class="logo">
+       <ul><a href="index.html"><img src="imagenes/WhatsApp Image 2024-05-31 at 12.15.24 AM.jpeg" alt="Logo"></a></ul>
+      </div>
+      <div class="navbar">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="contact">
+  <center>
+    <h1>Contacto</h1>
+    <p>Para contactar con nuestra página, puedes usar la siguiente información:</p>
+    <ul>
+      <li>Teléfono: 318950467</li>
+      <li>Correo electrónico: Movileservice45e67@gmail.com</li>
+    </ul>
+    <img src="https://img.freepik.com/vector-premium/mapa-punto-ubicacion-destino-mapa-ciudad-calle-rio-concepto-navegador-mapa-gps_34645-1078.jpg" alt="Ubicación" width="400" height="300">
+    <form id="suggestion-form">
+      <label for="suggestion">Déjanos tus sugerencias :</label><br>
+      <textarea id="suggestion" name="suggestion" rows="4" cols="50"></textarea><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </center>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

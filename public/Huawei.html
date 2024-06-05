@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huawei</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    background-image: url('https://marketplace.canva.com/EAEqgihRn3M/1/0/900w/canva-amarillo-rosado-y-verde-acuarela-suave-sin-texto-fondo-de-pantalla-para-tel%C3%A9fono-1zOXl8GAiIs.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta de tu imagen */
+    background-size: cover; /* Para asegurarte de que la imagen cubra toda la página */
+    background-position: center;
+}
+        .logo img {
+            max-width: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content h1 {
+            margin-left: 10px;
+            font-size: 2em;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu container header-content">
+            <a href="index.html" class="logo">
+                <img src="imagenes/WhatsApp Image 2024-05-31 at 12.15.24 AM.jpeg" alt="logo-img">
+            </a>
+            <h1>Huawei</h1>
+        </div>
+    </header>
+
+    <div class="container-items">
+        <div class="item">
+            <!-- Celulares -->
+            <figure>
+                <img src="https://i.blogs.es/eaa576/huawei-p50-00/840_560.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Celulares</h2>
+                <a href="CeluHua.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+
+        <!-- Tabletas -->
+        <div class="item">
+            <figure>
+                <img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/weu/common/mkt/plp/tablets-new/matepad-pro-13-2/kv.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Tabletas</h2>
+                <a href="TabHua.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+
+        <!-- SmartWatch -->
+        <div class="item">
+            <figure>
+                <img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/latam/co/mkt/pdp/wearables/watch-fit/huawei-watch-fit-smart-watch-v2.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>SmartWatch</h2>
+                <a href="SwHua.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+
+        <!-- Audifonos -->
+        <div class="item">
+            <figure>
+                <img src="https://bestek.com.co/images/000064/large/1543_0.PNG" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Audifonos</h2>
+                <a href="AudHua.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+
+        <!-- Accesorios -->
+        <div class="item">
+            <figure>
+                <img src="https://m.media-amazon.com/images/I/41Oa8oNMuzL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Accesorios</h2>
+                <a href="AcceHua.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+

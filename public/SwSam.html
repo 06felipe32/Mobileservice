@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartWatch</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        body {
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            background-image: url('https://marketplace.canva.com/EAEqgihRn3M/1/0/900w/canva-amarillo-rosado-y-verde-acuarela-suave-sin-texto-fondo-de-pantalla-para-tel%C3%A9fono-1zOXl8GAiIs.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta de tu imagen */
+            background-size: cover; /* Para asegurarte de que la imagen cubra toda la página */
+            background-position: center;
+        }</style>
+</head>
+<body>
+    <header>
+        <h1><a href="Samsung.html" class="no-underline">SmartWatch Samsung</a></h1>
+
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Samsung</p>
+                            <span class="precio-producto-carrito">$80000</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-items">
+        
+        <div class="item">
+            <figure>
+                <img src="https://www.alkosto.com/medias/8806095369518-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNjU3MHxpbWFnZS93ZWJwfGFHUmhMMmhrWXk4eE5ETTJOelk0TlRjd05UYzFPQzg0T0RBMk1EazFNelk1TlRFNFh6QXdNVjgzTlRCWGVEYzFNRWd8ZmI2NGE0YjdhNTNlNmViYmNlZWYzYWZmNzgyZTIxYmNmZTk0YmI1NjQ1OWQyMTU4MjBkYjM1OTJmN2RhMjc1Mg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Band Fit3</h2>
+                <p class="price">$250000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+                <div class="product-details hidden">
+                    <strong>Pantalla:</strong> 40" Milímetros<br>
+                    <strong>Material correa:</strong> Fluoroelastómero<br>
+                    <strong>Talla correa:</strong> M<br>
+                    <strong>Almacenamiento:</strong> 256 MB<br>
+                    <strong>Batería:</strong> 1590 mAh<br>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+
+<div class="item">
+    <figure>
+        <img src="https://www.alkosto.com/medias/8806094491814-003-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNTU2MnxpbWFnZS93ZWJwfGFHRXlMMmczTWk4eE5ETTBNall5TmpBNE1qZzBOaTg0T0RBMk1EazBORGt4T0RFMFh6QXdNMTgzTlRCWGVEYzFNRWd8YTY3MWNkNGQyODI5ODE0ZWUyZDZhNTBmOTZkMzY2ZGIyNDkzZjlkOGQ4NjYzNTc2ZWE0NWU0NWJkOGRjNmQzMw" alt="producto" />
+    </figure>
+    <div class="info-product">
+        <h2>Watch 5 pro 45mm</h2>
+        <p class="price">$1100000</p>
+        <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+            <strong>Pantalla:</strong> 45" Milímetros<br>
+            <strong>Material correa:</strong> Fluoroelastómero<br>
+            <strong>Talla correa:</strong> L, M y S<br>
+            <strong>Almacenamiento:</strong> 16 GB<br>
+            <strong>Batería:</strong> 1970 mAh<br>
+        </div>
+        <button class="btn-buy">Comprar</button>
+        <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Reloj 3 -->
+<div class="item">
+    <figure>
+        <img src="https://www.alkosto.com/medias/8806095054315-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyNzI3NnxpbWFnZS93ZWJwfGFEWmtMMmhpWXk4eE5ETTFNelUwTkRnM01UazJOaTg0T0RBMk1EazFNRFUwTXpFMVh6QXdNVjgzTlRCWGVEYzFNRWd8YThjZjc3MGJmMWFlZjExNGJiZTgyODc4ODgwYTNkZGRkNTM3ZDk1OTgxMTc5YWNiNzVhZTEyNDFhYjc3MGU3MA" alt="producto" />
+    </figure>
+    <div class="info-product">
+        <h2>Watch 6 Classic 47mm</h2>
+        <p class="price">$1900000</p>
+        <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+            <strong>Pantalla:</strong> 47" Milímetros<br>
+            <strong>Material correa:</strong> Fluoroelastómero<br>
+            <strong>Talla correa:</strong> M y S<br>
+            <strong>Almacenamiento:</strong> 16 GB<br>
+            <strong>Batería:</strong> 2100 mAh<br>
+        </div>
+        <button class="btn-buy">Comprar</button>
+        <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Reloj 4 -->
+<div class="item">
+    <figure>
+        <img src="https://www.alkosto.com/medias/8806095054025-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxOTM4NnxpbWFnZS93ZWJwfGFEbGxMMmhpWmk4eE5ETTFNelV5TWpNNU16RXhPQzg0T0RBMk1EazFNRFUwTURJMVh6QXdNVjgzTlRCWGVEYzFNRWd8YTdiYTY5ZTJlMzExODQ3ZTY4YTYxNjRjNGJkMjkzMTQ1ZDZkNTA4Y2ZkMTNhMTNiZGJhNzhmNTdhMDQyOGEyMQ" alt="producto" />
+    </figure>
+    <div class="info-product">
+        <h2>Watch 6 44mm</h2>
+        <p class="price">$1300000</p>
+        <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+            <strong>Pantalla:</strong> 44" Milímetros<br>
+            <strong>Material correa:</strong> Fluoroelastómero<br>
+            <strong>Talla correa:</strong> M y S<br>
+            <strong>Almacenamiento:</strong> 16 GB<br>
+            <strong>Batería:</strong> 1670 mAh<br>
+        </div>
+        <button class="btn-buy">Comprar</button>
+        <button class="btn-add-cart">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Reloj 5 -->
+<div class="item">
+    <figure>
+        <img src="https://www.alkosto.com/medias/8806095054292-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyODY0MHxpbWFnZS93ZWJwfGFETmhMMmd3TWk4eE5ETTFNelUwTVRjeU5qSXpPQzg0T0RBMk1EazFNRFUwTWpreVh6QXdNVjgzTlRCWGVEYzFNRWd8YTFhY2YxMWFkMWY3YTUxYjhkN2IzYjFlNjgwZmUxNzY4MWY2NzcyNjE0MGU1OTk1ZGJkODExODFkYmI5YzMxMg" alt="producto" />
+    </figure>
+    <div class="info-product">
+        <h2>Watch Classic 6 43mm</h2>
+        <p class="price">$1600000</p>
+        <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+            <strong>Pantalla:</strong> 43"
+            Milímetros<br>
+<strong>Material correa:</strong> Fluoroelastómero<br>
+<strong>Talla correa:</strong> M y S<br>
+<strong>Almacenamiento:</strong> 16 GB<br>
+<strong>Batería:</strong> 1850 mAh<br>
+</div>
+<button class="btn-buy">Comprar</button>
+<button class="btn-add-cart">Añadir al carrito</button>
+</div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>

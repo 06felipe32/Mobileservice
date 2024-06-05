@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audifonos</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        body {
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            background-image: url('https://marketplace.canva.com/EAEqgihRn3M/1/0/900w/canva-amarillo-rosado-y-verde-acuarela-suave-sin-texto-fondo-de-pantalla-para-tel%C3%A9fono-1zOXl8GAiIs.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta de tu imagen */
+            background-size: cover; /* Para asegurarte de que la imagen cubra toda la página */
+            background-position: center;
+        }</style>
+</head>
+<body>
+    <header>
+        <h1><a href="Samsung.html" class="no-underline">Audifonos Samsung</a></h1>
+
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Samsung</p>
+                            <span class="precio-producto-carrito">$80000</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-items">
+        
+        <!-- Audífonos 1 -->
+        <div class="item">
+            <figure>
+                <img src="https://ceser.co/wp-content/uploads/2019/10/audi-negros.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Audifonos con cable</h2>
+                <p class="price">$15000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+                <div class="product-details hidden">
+                    <p><strong>Inalámbricos:</strong> No</p>
+                    <p><strong>Color:</strong> Negro</p>
+                    <p><strong>Bluetooth:</strong> No</p>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <!-- Audífonos 2 -->
+        <div class="item">
+            <figure>
+                <img src="https://www.alkosto.com/medias/8806092505452-002-750Wx750H?context=bWFzdGVyfGltYWdlc3w2MzY2fGltYWdlL3dlYnB8YURFM0wyZzVPUzh4TkRNeE56UTJNVE0wTURFNU1DODRPREEyTURreU5UQTFORFV5WHpBd01sODNOVEJYZURjMU1FZ3wzNjVmNjI0YWRmNjQ5Y2M0NGEyOTE3N2E2ZjE4MGRmMGU5MzM3NDE3NWVjNjM3MGUzNGFlNmQwNDkxNTU0YzVj" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Samsung buds 2</h2>
+                <p class="price">$350000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+                <div class="product-details hidden">
+                    <p><strong>Inalámbricos:</strong> Si</p>
+                    <p><strong>Color:</strong> Negro</p>
+                    <p><strong>Bluetooth:</strong> Si</p>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        
+        <!-- Audífonos 3 -->
+        <div class="item">
+            <figure>
+                <img src="https://www.alkosto.com/medias/8806095221595-006-750Wx750H?context=bWFzdGVyfGltYWdlc3w5NDAyfGltYWdlL3dlYnB8YURkbEwyZzNOeTh4TkRNMk1EUTVORE0wTWpFM05DODRPREEyTURrMU1qSXhOVGsxWHpBd05sODNOVEJYZURjMU1FZ3wwZTg1YzRkYzYwY2IzZjk1ZDg1OWNjNGIxNjNmYTJiMzMwMjdkZDQ2NDVmYmFmMjFmZWU1NzA1NmRkYTRhODRj" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>Samsung buds Fe</h2>
+                <p class="price">$280000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+                <div class="product-details hidden">
+                    <p><strong>Inalámbricos:</strong> Si</p>
+                    <p><strong>Color:</strong> Negro</p>
+                    <p><strong>Bluetooth:</strong> Si</p>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    
+        <!-- Audífonos 4 -->
+        <div class="item">
+            <figure>
+                <img src="https://www.alkosto.com/medias/8801790015999-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w5MzgwfGltYWdlL3dlYnB8YURBMUwyZ3lNeTh4TkRJNE1ESTJOakk0TlRBNE5pODRPREF4Tnprd01ERTFPVGs1WHpBd01WODNOVEJYZURjMU1FZ3w5ODA3ZmU4ZDJhYTdlZDA3NGIwMmFkMTg4Mzc2MDM5MzRjZWVkMWY4NzFmMTkyMGQxNDE4YTc1ZWUxY2E0MThj" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Samsung ITFIT </h2>
+                <p class="price">$130000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+                <div class="product-details hidden">
+                    <p><strong>Inalámbricos:</strong> No</p>
+                    <p><strong>Color:</strong> Negro</p>
+                    <p><strong>Bluetooth:</strong> Si</p>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    
+        <!-- Audífonos 5 -->
+        <div class="item">
+            <figure>
+                <img src="https://www.alkosto.com/medias/8806092012868-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w2NDM2MnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneFpTOW9NMll2TVRBek56TTFNamM1TWpnNE5qSXVhbkJufDQ3MmQ3ODM4MjI3YzUxMDM5ZjZjNWRjZDliYTE4NjllZDA1NzZjMjQ1MjY4MTUyODc5NWFkZWM2MTIyNzgyZTA" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Samsung Buds Pro</h2>
+                <p class="price">$450000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+                <div class="product-details hidden">
+                    <p><strong>Inalámbricos:</strong> Si</p>
+                    <p><strong>Color:</strong> Morado</p>
+                    <p><strong>Bluetooth:</strong> Si</p>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

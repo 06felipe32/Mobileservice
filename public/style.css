@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    background-image: url('https://marketplace.canva.com/EAEqgihRn3M/1/0/900w/canva-amarillo-rosado-y-verde-acuarela-suave-sin-texto-fondo-de-pantalla-para-tel%C3%A9fono-1zOXl8GAiIs.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta de tu imagen */
+    background-size: cover; /* Para asegurarte de que la imagen cubra toda la página */
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://img.freepik.com/fotos-premium/fondo-rosa-azul-fondo-rojo_889868-21.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta de tu imagen */
+    background-size: cover; /* Para asegurarte de que la imagen cubra todo el encabezado */
+    background-position: center; /* Para centrar la imagen */
+    border-top: 5px solid #5d96cb;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+.logo img {
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    color: #111419;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    color: #1323b6;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+#carrito {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-left: auto;
+}
+
+#img-carrito {
+    width: 40px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #FFFFFF;
+}
+
+.borrar {
+    background-color: #1142d7;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.header-txt {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.header-img img {
+    max-width: 300px;
+}
+
+.menu.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar ul li:first-child {
+    margin-right: auto;
+}
+
+.products.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products .box {
+    width: calc(20% - 20px);
+    margin-bottom: 20px;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito {
+display: block;
+position: absolute;
+right: 0;
+backdrop-filter: blur(10px);
+top: 100;
+z-index: 1;
+background-color: #333;
+padding: 20px;
+min-width: 400px;
+}
+
+
+.submenu-content {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar ul li:not(:hover) .submenu-content {
+    display: none;
+}
+
+.submenu-content li {
+    display: block;
+}
+
+.submenu-content li a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.submenu-content li a:hover {
+    background-color: #f0f0f0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-txt {
+    flex-basis: 50%;
+    margin-right: 25px;
+}
+
+span {
+    color: #1142d7;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #1142d7;
+    margin-bottom: 35px;
+}
+
+.header-txt p {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 35px;
+}
+
+.butons {
+    display: flex;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px;
+    background-color: #98c3a5;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+
+.header-img {
+    height: 550px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-image: url('https://img.freepik.com/vector-gratis/concepto-diseno-colorido-maqueta-telefono-inteligente-degradado-destellos-realistas_1284-62286.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Ajusta el color del texto para que sea legible en la imagen de fondo */
+    padding: 100px 20px; /* Ajusta el relleno para centrar el contenido verticalmente */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Efecto de zoom al pasar el cursor */
+.header-content:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+
+.header-txt {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.header-img {
+    flex-basis: 50%;
+    text-align: center; /* Alinea la imagen al centro */
+}
+.oferts {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofert-1 {
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b1 {
+    background-color: #FA9824;
+}
+
+.b2 {
+    background-color: #e7eed0;
+}
+
+.b3 {
+    background-color: #9893da;
+}
+    .discount-text {
+        color: #1142d7;
+    }
+
+.ofert-txt {
+    flex-basis: 50%;
+}
+
+.ofert-txt h3 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.ofert-txt a {
+    color: #ffffff;
+}
+
+.ofert-img {
+    flex-basis: 50%;
+}
+.ofert-img img {
+    transition: transform 0.3s ease;
+}
+
+.ofert-img img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+.products .box img {
+    transition: transform 0.3s ease;
+}
+
+.products .box img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+.testimonial {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.testimonial-1 {
+    flex-basis: calc(50% - 20px); /* Corregido */
+    padding: 40px;
+    text-align: left;
+    background-color: #c6e0e7;
+    border-top: 5px solid #5d96cb;
+}
+
+.testimonial-1 img {
+    width: 100px;
+}
+
+.testimonial-1 h4 {
+    font-size: 17px;
+    color: #111419;
+}
+.footer {
+    background-image: url('https://img.freepik.com/fotos-premium/fondo-rosa-azul-fondo-rojo_889868-21.jpg');
+    background-size: cover; /* Para asegurarte de que la imagen cubra toda la página */
+    background-position: center;
+    border-top: 5px solid #5d96cb;
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    color: #081e62;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.link a {
+    color: #AEAFAF;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Transición de color */
+}
+
+.link a:hover {
+    color: #1323b6;
+}

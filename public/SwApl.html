@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <title>AppleWatch</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        body {
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            background-image: url('https://marketplace.canva.com/EAEqgihRn3M/1/0/900w/canva-amarillo-rosado-y-verde-acuarela-suave-sin-texto-fondo-de-pantalla-para-tel%C3%A9fono-1zOXl8GAiIs.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta de tu imagen */
+            background-size: cover; /* Para asegurarte de que la imagen cubra toda la página */
+            background-position: center;
+        }</style>
+</head>
+<body>
+    <header>
+        <h1><a href="iPhone.html" class="no-underline">AppleWatch</a></h1>
+
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">iPhone</p>
+                            <span class="precio-producto-carrito">$80000</span>
+                            
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-items">
+        
+        <!-- Reloj 1 -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.alkosto.com/medias/194253772187-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMzYyNnxpbWFnZS93ZWJwfGFHUTNMMmc1T1M4eE5ETTFOalUxTmpZM056RTFNQzh4T1RReU5UTTNOekl4T0RkZk1EQXhYemMxTUZkNE56VXdTQXxkMzBiMWRmNDJjN2MzZGIzNGMzYmQxZTk4ZWE4MGU0NTY4YmQ3Yjc5ZmJkMDVhOTBmODQ1NThmZmQ0NDQ1ODJh"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Apple Watch SE</h2>
+                <p class="price">$1300000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 44" Milimetros <code></code>
+                <strong>Material correa</strong>Fluoroelastomero<code></code>
+                <strong>Talla correa</strong> M y S <code></code>
+                <strong>Almacenamiento</strong> 32 GB <code></code>
+                <strong>Batería</strong> 1300 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <!-- Reloj 2 -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.alkosto.com/medias/194253149040-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNTA0MHxpbWFnZS93ZWJwfGFETmtMMmhoWXk4eE5ETXpOVEF5TkRjNU1UVTRNaTh4T1RReU5UTXhORGt3TkRCZk1EQXhYemMxTUZkNE56VXdTQXw1NDI4MjJiYTZiM2NjNjAxYTEyZDZiYmI5ZWU4ZjY2MzczYWM0MWZmNWQyN2QzZGIwMzgxMzVhZGQ4MmNiNTBm"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Apple Watch 8</h2>
+                <p class="price">$1800000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 45" Milimetros <code></code>
+                <strong>Material correa</strong>Elastomero de alto rendimiento<code></code>
+                <strong>Talla correa</strong> L, M y S<code></code>
+                <strong>Almacenamiento</strong> 32 gb <code></code>
+                <strong>Batería</strong> 1500 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+        
+        <!-- Reloj 3 -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.alkosto.com/medias/194253814092-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMzIxMnxpbWFnZS93ZWJwfGFHVXdMMmd6Wmk4eE5ETTFOalU0TkRrNE9EY3dNaTh4T1RReU5UTTRNVFF3T1RKZk1EQXhYemMxTUZkNE56VXdTQXwzOWUxM2ViY2Y4MjI4NGY4NDIwNWU2YzI5ZGVhYTFmYmNiMWFiODE0ZDhlNDMyYTRlOTlmMzE4MGE5YjM4NmU0"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Apple Watch 9</h2>
+                <p class="price">$1900000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 41" Milimetros <code></code>
+                <strong>Material correa</strong>Fluoroelastomero<code></code>
+                <strong>Talla correa</strong> M y S<code></code>
+                <strong>Almacenamiento</strong> 64 gb <code></code>
+                <strong>Batería</strong> 1750 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <!-- Reloj 4 -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.alkosto.com/medias/194253143581-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzNDk1NnxpbWFnZS93ZWJwfGFHSmtMMmhsTVM4eE5ETXpOVEF6TVRZd056TXlOaTh4T1RReU5UTXhORE0xT0RGZk1EQXhYemMxTUZkNE56VXdTQXw0Yjk0MzE2MDg0ZDI5Mjk4NTYyOTNjYWQzMDlkZDI3ZmEyODMyZDIxODY5MjMzNjhmNjRhMjQyYzdiYTQ4NTcy"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Apple Watch Ultra</h2>
+                <p class="price">$3400000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 49" Milimetros <code></code>
+                <strong>Material correa</strong>Elastomero de alto rendimiento<code></code>
+                <strong>Talla correa</strong> L, M y S<code></code>
+                <strong>Almacenamiento</strong> 32 gb <code></code>
+                <strong>Batería</strong> 3200 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        </div>
+
+        <!-- Reloj 5 -->
+        <div class="item"> 
+        <figure>
+                <img
+                    src="https://www.alkosto.com/medias/194253825937-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyODY0MnxpbWFnZS93ZWJwfGFHSTBMMmcxTnk4eE5ETTFOall5TnpBMk1qZ3hOQzh4T1RReU5UTTRNalU1TXpkZk1EQXhYemMxTUZkNE56VXdTQXw1NzA5ZjYzZTFmMDk2NmY0NjdmMThkNjE1MWFjMWMzMWI4MzEwY2U2MDA1ZGFhMmU4ZjY2ZDU0ZDEyOGU1ODdm"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Apple Watch Ultra 2</h2>
+                <p class="price">$4200000</p>
+                <button class="btn-toggle-details">Mostrar detalles</button>
+        <div class="product-details hidden">
+                <strong>Pantalla</strong> 49" Milimetros <code></code>
+                <strong>Material correa</strong>Titanio, Fluoroelastomero<code></code>
+                <strong>Talla correa</strong> L, M y S<code></code>
+                <strong>Almacenamiento</strong> 64 gb <code></code>
+                <strong>Batería</strong> 3450 mAh <code></code>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+        <br>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
