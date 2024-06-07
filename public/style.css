@@ -278,13 +278,14 @@ span {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    background-image: url('https://img.freepik.com/vector-gratis/concepto-diseno-colorido-maqueta-telefono-inteligente-degradado-destellos-realistas_1284-62286.jpg');
+    background-image: url('https://img.freepik.com/vector-gratis/concepto-diseno-colorido-maqueta-telefono-inteligente-degradado-destellos-realistas_1284-62286.jpg?size=626&ext=jpg&ga=GA1.1.539837299.1711670400&semt=ais');
     background-size: cover;
     background-position: center;
     color: #ffffff; /* Ajusta el color del texto para que sea legible en la imagen de fondo */
     padding: 100px 20px; /* Ajusta el relleno para centrar el contenido verticalmente */
     transition: transform 0.3s ease; /* Agrega una transición suave */
 }
+
 
 /* Efecto de zoom al pasar el cursor */
 .header-content:hover {
